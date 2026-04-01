@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FAFAFA;
+  margin: 0;
+  color: #212121;
+}
+
+header {
+  background: #388E3C;
+  color: white;
+  padding: 1em;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.header-content h1 {
+  margin: 0;
+  margin-left: 10px; 
+}
+
+.voltar svg {
+  fill: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.voltar:hover svg {
+  transform: scale(1.1);
+}
+
+main {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+
+.formulario {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 0 auto;
+
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.7em;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+}
+
+button {
+  background: #388E3C;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info-contato {
+  padding: 3rem 1rem;
+  background: #FAFAFA;
+}
+
+.card-info {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  text-align: center; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.card-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-info i {
+  font-size: 2.5rem;
+  color: #2e7d32; 
+  margin-bottom: 1rem;
+}
+
+.card-info h3 {
+  font-size: 1.25rem;
+  color: #212121;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-info p {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* rodape footer */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+

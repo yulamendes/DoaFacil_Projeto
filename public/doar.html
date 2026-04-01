@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doar - DoaFácil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/doar.css">
+  
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2e7d32;">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logodoafacil.png" alt="DoaFácil" width="180">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Cadastro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="login.html">Entre na sua conta</a></li> 
+              <li><a class="dropdown-item" href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="form-container">
+      <h2>Registrar Doação</h2>
+      <form action="#" method="post">
+        <label for="tipo">Tipo de Alimento</label>
+        <input type="text" id="tipo" name="tipo" placeholder="Ex: Arroz, Feijão, Macarrão e etc..." required>
+
+        <label for="quantidade">Quantidade</label>
+        <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 10" required>
+
+        <label for="validade">Data de Validade</label>
+        <input type="date" id="validade" name="validade">
+
+        <label for="local">Local de Retirada/Entrega</label>
+        <input type="text" id="local" name="local" placeholder="Ex: Rua das Flores, 123" required>
+
+        <button type="submit">Cadastrar Doação</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DoaFácil - Plataforma de Doação de Alimentos</p>
+  </footer>
+</body>
+</html>

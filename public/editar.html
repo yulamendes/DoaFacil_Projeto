@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar - DoaFácil</title>
+</head>
+<body>
+    <form id="formEditar">
+
+    <input name="nome">
+    <input name="valor">
+    <input name="descricao">
+    <input name="fornecedor">
+    <input name="email">
+    <input name="telefone">
+
+    <button type="submit">Atualizar</button>
+
+</form>
+
+<script>
+const id = new URLSearchParams(window.location.search).get('id');
+
+document.getElementById('formEditar').action =
+    `/editar/${id}`;
+</script>
+</body>
+</html>

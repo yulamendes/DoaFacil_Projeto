@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FAFAFA;
+  color: #212121;
+  margin: 0;
+}
+
+header {
+  background: #388E3C;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+nav .ativo {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em;
+}
+
+.dados, .historico {
+  background: white;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #E53935;
+  color: white;
+  border: none;
+  padding: 0.7em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #FAFAFA;
+  margin: 0;
+}
+
+header {
+  background: #388E3C;
+  color: white;
+  padding: 1em;
+}
+
+main {
+  padding: 2em;
+}
+
+.detalhes {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #FBC02D;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+}
