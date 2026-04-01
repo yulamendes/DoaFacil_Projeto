@@ -1,0 +1,25 @@
+<h1>Cadastrar Doação — DoaFácil</h1>
+
+<form action="/add-doacao" method="POST">
+
+    <label>Nome do alimento</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>Quantidade</label><br>
+	<input type="text" name="quantidade" placeholder="Ex: 2kg, 10 unidades" required><br><br>
+
+    <label>Descrição</label><br>
+    <textarea name="descricao" required></textarea><br><br>
+
+    <label>Nome do fornecedor</label><br>
+    <input type="text" name="fornecedor" required><br><br>
+
+    <label>Email do fornecedor</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Telefone do fornecedor</label><br>
+    <input type="tel" name="telefone" required><br><br>
+
+    <button type="submit">Enviar</button>
+
+</form>

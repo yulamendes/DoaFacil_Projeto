@@ -1,0 +1,16 @@
+<h1>Doações Disponíveis</h1>
+
+
+{{#each doacao}}
+	ID:{{dataValues.id}}<br>
+	Nome:{{dataValues.nome}}<br>
+	Quantidade:{{dataValues.quantidade}}<br>
+	Email:{{dataValues.email}}<br>
+	Cadastrado:{{#formatDate dataValues.createdAt}}{{/formatDate}}<br><br>
+
+	<a href="/editar-doacao/{{dataValues.id}}"><button>Editar</button></a>
+	<a href="/del-doacao/{{dataValues.id}}"><button>Apagar</button></a>
+	<hr>
+	
+{{/each}}
+

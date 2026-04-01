@@ -1,0 +1,29 @@
+<h2>Editar Doação</h2>
+
+<form action="/update-doacao" method="POST">
+
+    <!-- Campo oculto: guarda o ID para saber qual registro atualizar -->
+    <input type="hidden" name="id" value="{{doacao.id}}">
+
+    <label>Nome do produto:</label>
+    <input type="text" name="nome" value="{{doacao.nome}}" required>
+
+    <label>Quantidade:</label>
+    <input type="text" name="quantidade" value="{{doacao.quantidade}}" required>
+
+    <label>Descrição:</label>
+    <textarea name="descricao" required>{{doacao.descricao}}</textarea>
+
+    <label>Nome do fornecedor:</label>
+    <input type="text" name="fornecedor" value="{{doacao.fornecedor}}" required>
+
+    <label>Email do fornecedor:</label>
+    <input type="email" name="email" value="{{doacao.email}}" required>
+
+    <label>Telefone do fornecedor:</label>
+    <input type="tel" name="telefone" value="{{doacao.telefone}}" required>
+
+    <button type="submit">Salvar alterações</button>
+    <a href="/doacao">Cancelar</a>
+
+</form>
