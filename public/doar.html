@@ -59,7 +59,7 @@
 
         <label for="kg_Alimento">Quantidade de Alimento (kg)</label>
         <div style="display: flex; align-items: center; gap: 8px;">
-          <input type="number" id="kg_Alimento" name="kg_Alimento" min="1" placeholder="Ex: 10" required
+          <input type="number" id="kg_Alimento" name="kg_Alimento" min="0.1" step="0.01" placeholder="Ex: 10" required
             oninput="document.getElementById('kg_label').style.display = this.value ? 'inline' : 'none'">
           <span id="kg_label" style="display: none; font-weight: bold;">kg</span>
         </div>
