@@ -12,6 +12,9 @@ const Doacao = db.sequelize.define('doadores', {
     },
     kg_Alimento: {
         type: db.Sequelize.STRING
+    },
+    nome_Alimento: {
+        type: db.Sequelize.STRING
     }
 })
 

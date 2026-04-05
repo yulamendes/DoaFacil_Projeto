@@ -34,6 +34,7 @@ app.post("/add-doacao", function(req, res){
         telefone_doador: req.body.telefone_doador,
         email_Doador:    req.body.email_Doador,
         kg_Alimento:     req.body.kg_Alimento,
+        nome_Alimento:   req.body.nome_Alimento,
     }).then(function(){
         res.redirect('/doacao')
     }).catch(function(erro){
@@ -62,11 +63,13 @@ app.get('/editar-doacao/:id', function(req, res) {
 })
 
 app.post('/update-doacao', function(req, res) {
+    console.log(req.body)
     doacao.update({
         nome_doador:     req.body.nome_doador,
         telefone_doador: req.body.telefone_doador,
         email_Doador:    req.body.email_Doador,
         kg_Alimento:     req.body.kg_Alimento,
+        nome_Alimento:   req.body.nome_Alimento,
     }, {
         where: { 'id': req.body.id }
     }).then(function() {

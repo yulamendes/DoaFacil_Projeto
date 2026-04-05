@@ -3,25 +3,23 @@
 <form action="/update-doacao" method="POST">
 
     <!-- Campo oculto: guarda o ID para saber qual registro atualizar -->
-    <input type="hidden" name="id" value="{{doacao.id}}">
+    <input type="hidden" name="id" value="{{doacao.dataValues.id}}">
 
-    <label>Nome do produto:</label>
-    <input type="text" name="nome" value="{{doacao.nome}}" required>
+    <label>Nome do alimento:</label>
+    <input type="text" name="nome_Alimento" value="{{doacao.dataValues.nome_Alimento}}" required><br><br>
 
     <label>Quantidade:</label>
-    <input type="text" name="quantidade" value="{{doacao.quantidade}}" required>
+    <input type="text" name="kg_Alimento" value="{{doacao.dataValues.kg_Alimento}}" required><br><br>
 
-    <label>Descrição:</label>
-    <textarea name="descricao" required>{{doacao.descricao}}</textarea>
 
-    <label>Nome do fornecedor:</label>
-    <input type="text" name="fornecedor" value="{{doacao.fornecedor}}" required>
+    <label>Nome do doador:</label>
+    <input type="text" name="nome_doador" value="{{doacao.dataValues.nome_Doador}}" required><br><br>
 
-    <label>Email do fornecedor:</label>
-    <input type="email" name="email" value="{{doacao.email}}" required>
+    <label>Email doador:</label>
+    <input type="email" name="email_Doador" value="{{doacao.dataValues.email_Doador}}" required><br><br>
 
-    <label>Telefone do fornecedor:</label>
-    <input type="tel" name="telefone" value="{{doacao.telefone}}" required>
+    <label>Telefone do doador:</label>
+    <input type="tel" name="telefone_doador" value="{{doacao.dataValues.telefone_Doador}}" required><br><br>
 
     <button type="submit">Salvar alterações</button>
     <a href="/doacao">Cancelar</a>

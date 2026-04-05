@@ -3,9 +3,11 @@
 
 {{#each doacao}}
 	ID:{{dataValues.id}}<br>
-	Nome:{{dataValues.nome}}<br>
-	Quantidade:{{dataValues.quantidade}}<br>
-	Email:{{dataValues.email}}<br>
+	Nome do Doador:{{dataValues.nome_doador}}<br>
+	Telefone:{{dataValues.telefone_doador}}<br>
+	Quantidade:{{dataValues.kg_Alimento}}<br>
+	Email:{{dataValues.email_Doador}}<br>
+	Alimento: {{dataValues.nome_Alimento}}<br>
 	Cadastrado:{{#formatDate dataValues.createdAt}}{{/formatDate}}<br><br>
 
 	<a href="/editar-doacao/{{dataValues.id}}"><button>Editar</button></a>
