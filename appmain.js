@@ -24,6 +24,10 @@ app.get("/doacao", function(req, res){
     })
 });
 
+app.get("/sobre", function(req, res){
+    res.render("sobre");
+});
+
 app.get("/cad-doacao", function(req, res){
     res.render("cad_doacao");
 });
