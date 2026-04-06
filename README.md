@@ -29,31 +29,31 @@ A plataforma foi desenvolvida utilizando tecnologias modernas de back-end, com f
 ## 🏗️ Arquitetura do Projeto
 
 O projeto segue o padrão **MVC (Model-View-Controller)**:
+
 DoaFacil_Projeto/
 │
 ├── models/
-│   ├── db.js
-│   └── Doacao.js
+│ ├── db.js
+│ └── Doacao.js
 │
 ├── views/
-│   ├── layouts/
-│   │   └── main.handlebars
-│   ├── home.handlebars
-│   ├── sobre.handlebars
-│   ├── doacao.handlebars
-│   ├── cad_doacao.handlebars
-│   └── editar_doacao.handlebars
+│ ├── layouts/
+│ │ └── main.handlebars
+│ ├── home.handlebars
+│ ├── sobre.handlebars
+│ ├── doacao.handlebars
+│ ├── cad_doacao.handlebars
+│ └── editar_doacao.handlebars
 │
 ├── public/
-│   ├── css/
-│   ├── img/
-│   └── *.html
+│ ├── css/
+│ ├── img/
+│ └── *.html
 │
 ├── appmain.js
 ├── db.js
 ├── package.json
 └── .gitignore
-
 
 ---
 
@@ -113,10 +113,12 @@ A aplicação utiliza **Handlebars** como template engine:
 ### 1. Clone o repositório
 ```bash
 git clone https://github.com/yulamendes/DoaFacil_Projeto.git
+```
 
 ### 2. Instale as dependências
 ```bash
 npm install
+```
 
 ### 3. Configure o banco de dados
 No MySQL:
@@ -131,6 +133,7 @@ new Sequelize('Doacao', 'usuario', 'senha', {
 ### 4. Inicie o servidor
 ```bash
 node appmain.js
+```
 
 ### 5. Acesse no navegador
 http://localhost:8090
