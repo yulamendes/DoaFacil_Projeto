@@ -29,7 +29,7 @@ A plataforma foi desenvolvida utilizando tecnologias modernas de back-end, com f
 ## 🏗️ Arquitetura do Projeto
 
 O projeto segue o padrão **MVC (Model-View-Controller)**:
-
+```
 DoaFacil_Projeto/
 │
 ├── models/
@@ -54,6 +54,7 @@ DoaFacil_Projeto/
 ├── db.js
 ├── package.json
 └── .gitignore
+```
 
 ---
 
@@ -122,13 +123,17 @@ npm install
 
 ### 3. Configure o banco de dados
 No MySQL:
+```sql
 CREATE DATABASE Doacao;
+```
 
 Edite o arquivo db.js com suas credenciais:
+```bash
 new Sequelize('Doacao', 'usuario', 'senha', {
   host: 'localhost',
   dialect: 'mysql'
 })
+```
 
 ### 4. Inicie o servidor
 ```bash
